@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: myapp-deployment
+  labels:
+    app.kubernetes.io/name: scorecard-green
 spec:
   selector:
     matchLabels:
